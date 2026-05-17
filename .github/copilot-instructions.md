@@ -2,12 +2,12 @@
 
 Compliance Framework Compare is a focused cybersecurity portfolio project owned by Matthew Faber. The goal is straightforward: A static comparison tool that helps learners see where major compliance and security frameworks overlap, differ, and serve different purposes without pretending they are interchangeable checklists. Deployment target is GitHub Pages. The stack is HTML5, CSS3, Vanilla JavaScript, GitHub Pages. Keep the repo easy to review, easy to explain in an interview, and easy to deploy from a clean branch.
 
-When helping here, bias toward the smallest useful implementation. Preserve the deliberate no-build-step approach for the frontend. If the project uses Azure Functions, keep Node tooling isolated to `api/` and do not introduce root-level package management. Prefer plain HTML, CSS, and vanilla JavaScript that a recruiter can understand quickly by opening the repo.
+When helping here, bias toward the smallest useful implementation. Preserve the deliberate no-build-step approach for the frontend. If the project uses Azure Functions, keep Node tooling isolated to `api/` and do not introduce root-level package management. Prefer plain HTML, CSS, and vanilla JavaScript that reads clearly.
 
 What Copilot should help with:
 - Keep framework comparisons structured, concise, and careful about scope differences.
 - Design tables or cards that help users compare intent, not just memorize labels.
-- Preserve a static, reviewable implementation that reads cleanly to recruiters.
+- Preserve a clear, reviewable implementation.
 
 Domain guardrail: The key value here is careful comparison. This project should clarify what each framework is for, who uses it, and where analogies break down. Treat copy, labels, and examples as reviewable cybersecurity content, not filler text.
 
