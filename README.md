@@ -1,4 +1,4 @@
-# Compliance Framework Compare
+﻿# Compliance Framework Compare
 
 A side-by-side learning view for NIST, ISO, SOC 2, and CIS concepts.
 
@@ -14,7 +14,7 @@ A static comparison tool that helps learners see where major compliance and secu
 
 ## Live demo
 
-https://matthewfaber.github.io/compliance-framework-compare/
+https://mtfucf.github.io/compliance-framework-compare/
 
 ## Screenshot
 
