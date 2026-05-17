@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Static compliance framework comparison for NIST CSF, ISO 27001, SOC 2, CIS Controls, PCI DSS, and HIPAA."
+    />
+    <title>Compliance Framework Compare</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="src/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="shell header-row">
+        <div class="header-copy">
+          <p class="eyebrow">Matthew Faber · Framework comparison</p>
+          <h1>Compliance Framework Comparison — NIST CSF · ISO 27001 · SOC 2 · CIS Controls</h1>
+          <p class="lede">
+            A static side-by-side reference that clarifies scope, audience, and control mapping without pretending
+            these frameworks are interchangeable certifications.
+          </p>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">
+          Theme
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content" class="shell page-content">
+      <section class="hero-panel" aria-labelledby="hero-title">
+        <div class="hero-grid">
+          <div>
+            <p class="section-kicker">Comparison tool</p>
+            <h2 id="hero-title">See what each framework is for, where it overlaps, and where the analogy breaks down</h2>
+            <p>
+              Use the overview cards for orientation, the crosswalk for quick control mapping, and the control-area view
+              when you want one topic compared side-by-side.
+            </p>
+          </div>
+          <div class="hero-stats" aria-label="Quick stats">
+            <div class="stat-card"><span class="stat-value">6</span><span class="stat-label">Frameworks</span></div>
+            <div class="stat-card"><span class="stat-value">8</span><span class="stat-label">Control domains</span></div>
+            <div class="stat-card"><span class="stat-value">3</span><span class="stat-label">Views</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="controls-panel" aria-labelledby="controls-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Compare your way</p>
+            <h2 id="controls-title">Tabs and framework filters</h2>
+          </div>
+          <p class="section-note">Hide frameworks to reduce noise, then switch between summary cards, matrix view, and single-domain comparison.</p>
+        </div>
+
+        <div class="tab-row" role="tablist" aria-label="Comparison views">
+          <button class="tab-button is-active" id="tab-overview" type="button" role="tab" aria-selected="true" aria-controls="panel-overview" data-tab="overview">Overview</button>
+          <button class="tab-button" id="tab-crosswalk" type="button" role="tab" aria-selected="false" aria-controls="panel-crosswalk" data-tab="crosswalk">Crosswalk</button>
+          <button class="tab-button" id="tab-control-area" type="button" role="tab" aria-selected="false" aria-controls="panel-control-area" data-tab="control-area">By control area</button>
+        </div>
+
+        <div id="framework-filters" class="chip-row" role="group" aria-label="Show or hide frameworks"></div>
+        <p class="print-note">Print tip: switch to Crosswalk before printing if you want the compact matrix reference.</p>
+      </section>
+
+      <section id="panel-overview" class="view-panel" role="tabpanel" aria-labelledby="tab-overview">
+        <div id="overview-grid" class="overview-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="panel-crosswalk" class="view-panel" role="tabpanel" aria-labelledby="tab-crosswalk" hidden>
+        <div class="table-wrap">
+          <table id="crosswalk-table" class="crosswalk-table"></table>
+        </div>
+      </section>
+
+      <section id="panel-control-area" class="view-panel" role="tabpanel" aria-labelledby="tab-control-area" hidden>
+        <div class="control-selector">
+          <label for="domain-select">Choose a control area</label>
+          <select id="domain-select" name="domain"></select>
+        </div>
+        <div id="control-area-grid" class="control-area-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      Built by Matthew Faber ·
+      <a href="https://github.com/matthewfaber/compliance-framework-compare">source</a>
+    </footer>
+  </body>
+</html>
